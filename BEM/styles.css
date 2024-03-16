@@ -26,3 +26,28 @@ IDs -> functionality (Javascript)
 
 }
 
+.cards__card {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 12px;
+    margin: 5px;
+    background-color: lightcoral;
+    border-radius: 10px;
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card__link {
+    padding: 10px;
+    border-radius: 10px;
+    background: lightgreen;
+    color: lightslategray;
+    text-decoration: none;
+}
+
+.card__link--red{
+    background-color: red;
+    color: white;
+}
