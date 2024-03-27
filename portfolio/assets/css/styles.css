@@ -1,6 +1,6 @@
 /*General styles*/
 :root {
-    --mainColor: #4c6b1e;
+    --mainColor: #5b7fc5;
     /*#5b7f24;*/
     --whiteColor: #fff;
     --bgColor: #F2F7F9;
@@ -9,8 +9,11 @@
     --subtitleColor: #888;
     --blackColor: #222;
     --generalText: #555;
+    --scrollBarColor: #d3d3d3;
+    --scrollBarColorbg: #eee;
 }
 
+/*with this font size, we set the rem units*/
 html {
     font-size: 10px;
 }
@@ -181,6 +184,7 @@ h6 {
 }
 
 .content__page {
+    height: 100%;
     min-height: 100%;
     background-color: var(--whiteColor);
     border-radius: 3.2rem;
@@ -241,7 +245,8 @@ h6 {
     transition: all 300ms ease-in-out;
 }
 
-.menu__option:hover .menu__icon {
+.menu__option:hover .menu__icon,
+.menu__link--active .menu__icon {
     color: var(--mainColor);
 }
 
@@ -264,5 +269,239 @@ h6 {
 
 
 /****************
- ** ABOUT Styles*
+ ** general Styles: about and rest of pages*
  ****************/
+
+
+.content__about,
+.content__experience,
+.content__education {
+    height: 100%;
+    min-height: 100%;
+    overflow: auto;
+    padding: 4rem;
+    padding-top: 6rem;
+    display: block;
+    text-align: left;
+}
+
+.about__header,
+.experience__header,
+.education__header {
+    /*border: 1px solid red;*/
+    margin-bottom: 4.5rem;
+    display: inline-block;
+}
+
+.about__title,
+.experience__title,
+.education__title {
+    font-size: 3.2rem;
+    position: relative;
+}
+
+/*.about__title::after {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    width: 5rem;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--subtitleColor), var(--subtitleColor) 1px, transparent 0px, transparent 100%);
+    background-size: 0.6rem 0.6rem;
+    top: 2rem;
+    right: -2.5rem;
+    z-index: 0;
+
+}*/
+
+
+.title__color {
+    color: var(--mainColor);
+}
+
+.about__personalinfo {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10rem;
+}
+
+.personalinfo__bio {
+    flex-basis: 55%;
+}
+
+.personalinfo__data {
+    flex-basis: 45%;
+    padding: 0 1.5rem;
+}
+
+.personalinfo__description {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.personalinfo__opt {
+    margin-bottom: 1rem;
+}
+
+.personalinfo__title {
+    margin-right: 0.5rem;
+    color: var(--mainColor);
+    font-weight: 600;
+}
+
+/*services*/
+
+.about__services,
+.about__areasofexpertise {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.services__header,
+.areasofexpertise__header,
+.education__subtitle,
+.experience__subheader {
+    display: block;
+    padding-right: 1.2rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.services__title,
+.areasofexpertise__title {
+    font-size: 2.1rem;
+}
+
+.service__i {
+    color: var(--mainColor);
+    font-size: 3.8rem;
+}
+
+.services__container,
+.areasofexpertise__container {
+    /*border: 1px dashed red;*/
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__service,
+.areasofexpertise__area {
+    flex-basis: calc(50% - 3rem);
+    margin-right: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.service__title,
+.area__title {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.service__desc,
+.area__desc {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+
+/********************
+ * experience styles *
+ ********************/
+
+.experience__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline__job {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.job__header {
+    flex-basis: 45%;
+    text-align: right;
+    padding-right: 2.5rem;
+}
+
+.job__years {
+    margin: .3rem 0;
+    line-height: 1.9rem;
+    font-size: 1.6rem;
+}
+
+.job__company {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: var(--mainColor);
+}
+
+.job__description{
+    width: 50%;
+    padding-left: 2.5rem;
+}
+
+.job__title{
+    font-size: 2rem;
+}
+
+.responsabilities__list{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.job__divider{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    bottom: -5rem;
+    width: .1rem;
+    background-color: var(--subtitleColor);
+}
+
+.job__divider::before{
+    content: "";
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: -0.8rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: var(--mainColor);
+    border-radius: 10rem;
+    opacity: 0.50
+
+}
+
+.job__divider::after{
+    content: "";
+    position: absolute;
+    margin-top: 0.8rem;
+    margin-left: -0.5rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: var(--whiteColor);
+    border-radius: 10rem;
+    border: 0.2rem solid var(--mainColor);
+    opacity: 1;   
+}
+
+.responsabilities__list {
+    list-style-type: circle;
+}
+
+.education__item{
+    margin-bottom: 3rem;
+}
+
+.education__item--degree {
+    margin-bottom: 5rem;
+}
+
+.education__subtitle{
+    margin: 0;
+}

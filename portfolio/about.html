@@ -8,25 +8,21 @@
       href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/scroll.css">
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Portfolio - Gustavo Vargas</title>
   </head>
   <body>
-    
-    <div class="layout"> <!--Main layout START-->
-      
+    <div class="layout">
+      <!--Main layout START-->
+
       <aside class="layout__aside">
         <section class="aside__userinfo">
-
           <div class="userinfo__general">
             <div class="general__containerimage">
-              <img
-                src="assets/img/myself.jpeg"
-                class="general__image"
-                alt=""
-              />
+              <img src="assets/img/myself.jpeg" class="general__image" alt="" />
             </div>
             <h2 class="general__name">Gustavo Vargas</h2>
             <h4 class="general__job">Web and PLSQL Developer</h4>
@@ -34,68 +30,68 @@
 
           <nav class="userinfo__menu">
             <ul class="menu__list">
-                <li class="menu__option">
-                    <a href="index.html" class="menu__link">
-                        <i class="fa-solid fa-house menu__icon"></i>
-                        <span class="menu__overlay">Home</span>
-                    </a>
-                </li>
+              <li class="menu__option">
+                <a href="index.html" class="menu__link">
+                  <i class="fa-solid fa-house menu__icon"></i>
+                  <span class="menu__overlay">Home</span>
+                </a>
+              </li>
 
-                <li class="menu__option">
-                    <a href="about.html" class="menu__link">
-                        <i class="fa-solid fa-user menu__icon"></i>
-                        <span class="menu__overlay">About Me</span>
-                    </a>
-                </li>
+              <li class="menu__option">
+                <a href="about.html" class="menu__link menu__link--active">
+                  <i class="fa-solid fa-user menu__icon"></i>
+                  <span class="menu__overlay">About Me</span>
+                </a>
+              </li>
 
-                <li class="menu__option">
-                    <a href="education.html" class="menu__link">
-                        <i class="fa-solid fa-graduation-cap menu__icon"></i>
-                        <span class="menu__overlay">Education / Courses</span>
-                    </a>
-                </li>
+              <li class="menu__option">
+                <a href="education.html" class="menu__link">
+                  <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                  <span class="menu__overlay">Education / Courses</span>
+                </a>
+              </li>
 
-                <li class="menu__option">
-                    <a href="experience.html" class="menu__link">
-                        <i class="fa-solid fa-briefcase fa- menu__icon"></i>
-                        <span class="menu__overlay">Experience / Jobs</span>
-                    </a>
-                </li>
+              <li class="menu__option">
+                <a href="experience.html" class="menu__link">
+                  <i class="fa-solid fa-briefcase fa- menu__icon"></i>
+                  <span class="menu__overlay">Experience / Jobs</span>
+                </a>
+              </li>
 
-                <li class="menu__option">
-                    <a href="portfolio.html" class="menu__link">
-                        <i class="fa-regular fa-folder-open menu__icon"></i>
-                        <span class="menu__overlay">Portfolio</span>
-                    </a>
-                </li>
+              <li class="menu__option">
+                <a href="portfolio.html" class="menu__link">
+                  <i class="fa-regular fa-folder-open menu__icon"></i>
+                  <span class="menu__overlay">Portfolio</span>
+                </a>
+              </li>
 
-                <li class="menu__option">
-                    <a href="contact.html" class="menu__link">
-                        <i class="fa-solid fa-envelope menu__icon"></i>
-                        <span class="menu__overlay">Contact me</span>
-                    </a>
-                </li>
+              <li class="menu__option">
+                <a href="contact.html" class="menu__link">
+                  <i class="fa-solid fa-envelope menu__icon"></i>
+                  <span class="menu__overlay">Contact me</span>
+                </a>
+              </li>
             </ul>
           </nav>
 
           <!--Social Start-->
           <div class="userinfo__userlinks">
             <ul class="userlinks__social">
-                <li class="social__option">
-                    <a href="#" class="social__link">
-                        <i class="social__icon fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li class="social__option">
-                    <a href="#" class="social__link">
-                        <i class="social__icon fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social__option">
-                    <a href="#" class="social__link">
-                        <i class="social__icon fa-brands fa-instagram"></i>
-                    </a>
-                </li>
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-instagram"></i>
+                </a>
+              </li>
             </ul>
           </div>
           <!--Social End-->
@@ -107,21 +103,191 @@
           <!--CV Button End  -->
 
           <!--Footer Start-->
-          <footer class="userinfo__footer">
-            1984Development, 2024.
-          </footer>
+          <footer class="userinfo__footer">1984Development, 2024.</footer>
           <!--Footer End  -->
-
         </section>
-      </aside> <!--END layout__aside-->
+      </aside>
+      <!--END layout__aside-->
 
       <main class="layout__content">
-        <section class="content__page content_page--about">
+        <section class="content__page content__about">
+          <header class="about__header">
+            <h2 class="about__title">
+              About <span class="title__color">Me</span>
+            </h2>
+          </header>
+
+          <section class="about__personalinfo">
+
+            <article class="personalinfo__bio">
+              <p class="personalinfo__description">
+                Software developer with 7 years of experience with different 
+                technologies,
+                5 of those working in Oracle Database, PLSQL and FORMS. 2+ years 
+                of experience managing own projects from requirements collection to 
+                data analysis, propose solution, development, and time management.
+              </p>
+            </article>
+
+            <div class="personalinfo__data">
+              <ul class="personalinfo__list">
+                <li class="personalinfo__opt">
+                    <span class="personalinfo__title">English level</span>
+                    <span class="personalinfo__value">C1</span>
+                  </li>
+                <li class="personalinfo__opt">
+                  <span class="personalinfo__title">Age</span>
+                  <span class="personalinfo__value">31</span>
+                </li>
+                <li class="personalinfo__opt">
+                  <span class="personalinfo__title">Location</span
+                  ><span class="personalinfo__value">Mérida, Yucatán, México.</span>
+                </li>
+                <li class="personalinfo__opt">
+                  <span class="personalinfo__title">Email</span
+                  ><span class="personalinfo__value">gustavovargas@1984development.com</span>
+                </li>
+                <li class="personalinfo__opt">
+                  <span class="personalinfo__title">Phone #</span
+                  ><span class="personalinfo__value">+52 999 369 9794</span>
+                </li>
+              </ul>
+            </div>
+          </section> <!--END <section class="about__personalinfo"> -->
+            
+          <section class="about__services">
+            <div class="services__header">
+                <h2 class="services__title">What I <span class="title__color">Can Do</span></h2>
+            </div>
+
+            <div class="services__container">
+                <article class="services__service">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-palette service__i"></i>
+                    </div>
+                    <div class="service__content">
+                        <h3 class="service__title">Frontend</h3>
+                        <p class="service__desc">
+                            HTML, CSS, Bootstrap, Tailwind CSS, Chakra UI, Javascript
+                        </p>
+                    </div>
+                </article>
+
+                <article class="services__service">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-gears service__i"></i>
+                    </div>
+                    <div class="service__content">
+                        <h3 class="service__title">Backend</h3>
+                        <p class="service__desc">
+                            PLSQL, Php, Visual Basic, Javascript, API Rest (Express)
+                        </p>
+                    </div>
+                </article>
+
+                <article class="services__service">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-database service__i"></i>
+                    </div>
+                    <div class="service__content">
+                        <h3 class="service__title">Database</h3>
+                        <p class="service__desc">
+                            Oracle (11g, 12c, 19c), MS SQL Server, MySQL, MongoDB                        </p>
+                    </div>
+                </article>
+
+                <article class="services__service">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-code-branch service__i"></i>
+                    </div>
+                    <div class="service__content">
+                        <h3 class="service__title">Administration / Version control</h3>
+                        <p class="service__desc">
+                          Github, JIRA, LiquidPlanner</p>
+                    </div>
+                </article>
+
+            </div>
+          </section> <!--END <section class="about__services"> -->
+
+          <section class="about__areasofexpertise">
+            <header class="areasofexpertise__header">
+                <h3 class="areasofexpertise__title">
+                    Areas of <span class="title__color">expertise</span>
+                </h3>
+            </header>
+            <div class="areasofexpertise__container">
+                
+                <article class="areasofexpertise__area">
+                    <div class="area__icon">
+                        <i class="fa-solid fa-prescription service__i"></i>
+                    </div>
+
+                    <div class="area__title">
+                        <h3 class="area__title--name">Medical</h3>
+                    </div>
+
+                    <div class="area__desc">
+                        <p class="area__desc--name">Prescriptions creation process. Px registration, Rx creation and drugs quantity administration (fill or refill, based on doctor diagnosis), 
+                            payment method (Patient or insurance), shipment creation.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="areasofexpertise__area">
+                    <div class="area__icon">
+                        <i class="fa-solid fa-file-invoice-dollar service__i"></i>
+                    </div>
+
+                    <div class="area__title">
+                        <h3 class="area__title--name">Insurance / CRM</h3>
+                    </div>
+
+                    <div class="area__desc">
+                        <p class="area__desc--name">Accounting, agencies, claims, policies, Risks (Inspections), liability, underwritting.
+                        </p>
+                    </div>
+                </article>
+
+                <!--<article class="areasofexpertise__area">
+                    <div class="area__icon">
+                        <i class="fa-solid fa-prescription"></i>
+                    </div>
+
+                    <div class="area__title">
+                        <h3 class="area__title--name">Medical</h3>
+                    </div>
+
+                    <div class="area__desc">
+                        <p class="area__desc--name">Prescriptions creation process. Px registration, Rx creation and drugs quantity administration (fill or refill, based on doctor diagnosis), 
+                            payment method (Patient or insurance), shipment creation.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="areasofexpertise__area">
+                    <div class="area__icon">
+                        <i class="fa-solid fa-prescription"></i>
+                    </div>
+
+                    <div class="area__title">
+                        <h3 class="area__title--name">Medical</h3>
+                    </div>
+
+                    <div class="area__desc">
+                        <p class="area__desc--name">Prescriptions creation process. Px registration, Rx creation and drugs quantity administration (fill or refill, based on doctor diagnosis), 
+                            payment method (Patient or insurance), shipment creation.
+                        </p>
+                    </div>
+                </article>-->
+
+            </div>
+          </section>
 
         </section>
-      </main> <!--layout__content End  -->
-
-    </div> <!--Main layout END-->    
-
+      </main>
+      <!--layout__content End  -->
+    </div>
+    <!--Main layout END-->
   </body>
 </html>
